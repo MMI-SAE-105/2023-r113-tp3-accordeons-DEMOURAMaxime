@@ -21,7 +21,14 @@
           sit hic.</p>
       </section>
       <section>
-        <button>bouton 2</button>
-        <p>Placeat neque, blanditiis omnis sint dignissimos beatae delectus commodi. Ipsa eligendi ducimus nostrum esse</p>
+        <section x-data="{
+          isOpena:true,
+        }">
+          <button @click="isOpena = false">bouton 2</button>
+          <p x-show="isOpena">Placeat neque, blanditiis omnis sint dignissimos beatae delectus commodi. Ipsa eligendi
+            ducimus
+            nostrum esse,
+            et culpa natus iure unde atque quod facilis non aperiam distinctio veritatis, repudiandae magni! Aspernatur,
+            molestiae.</p>
   </body>
 </html>
